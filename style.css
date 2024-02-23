@@ -6,7 +6,35 @@ p {
   margin-top: 0;
 }
 
+.header {
+  text-align: center;
+  font-size: 3rem;
+  border: 5px solid #fff;
+  position: relative;
+}
+
+.header_text {
+  margin: 3rem;
+}
+
+.rnd_Number {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #fff;
+  width: 5rem;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0%);
+}
+.rndNumber {
+  margin: 1rem;
+}
+
 .gameSection {
+  text-align: center;
+  margin: 5rem auto;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 50fr);
@@ -16,6 +44,7 @@ p {
   grid-template-areas:
     'guessNumber result'
     'checkButton scores';
+  gap: 1rem;
 }
 
 .buttons {
@@ -29,6 +58,7 @@ p {
   font-size: 1.5rem;
   border: 2px solid white;
   padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .checkButton:hover {
